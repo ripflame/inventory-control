@@ -8,6 +8,10 @@
         <servlet-name>Logout</servlet-name>
         <servlet-class>servlets.Logout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EditProduct</servlet-name>
+        <servlet-class>servlets.EditProduct</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/admin/login</url-pattern>
@@ -20,20 +24,21 @@
         <servlet-name>addProduct</servlet-name>
         <servlet-class>servlets.AddProduct</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>addProduct</servlet-name>
         <url-pattern>/admin/addProduct</url-pattern>
     </servlet-mapping>
-
     <servlet>
         <servlet-name>inventario</servlet-name>
         <servlet-class>servlets.Inventario</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>inventario</servlet-name>
         <url-pattern>/admin/inventario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditProduct</servlet-name>
+        <url-pattern>/admin/edit</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
