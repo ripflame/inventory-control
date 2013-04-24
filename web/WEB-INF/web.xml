@@ -12,6 +12,10 @@
         <servlet-name>EditProduct</servlet-name>
         <servlet-class>servlets.EditProduct</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PerformEdit</servlet-name>
+        <servlet-class>servlets.PerformEdit</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/admin/login</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>EditProduct</servlet-name>
         <url-pattern>/admin/edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PerformEdit</servlet-name>
+        <url-pattern>/admin/performEdit</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

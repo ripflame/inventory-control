@@ -34,7 +34,9 @@ Released   : 20132602
                     <h1><img src="images/pink_lion.png" alt="pink_lion" width="200" height="90"><a href=".">Hakuna Matata</a></h1>
                 </div>
                 <div id="logout">
-                    <button class="btn_style1">Log Out <i class="icon-white icon-eject"></i> </button>
+                    <form name="logoutForm" method="post" action="/inventario/admin/logout">
+                        <input class="btn_style1" type="submit" name="logout" value="Log Out"></input>
+                    </form>
                 </div>
             </div>
         </div>
@@ -42,30 +44,31 @@ Released   : 20132602
             <div id="page" class="container">
                 <div id="content">
                     <header>EDITING</header>
-                    <form id="form" method="post" action="inventario.jsp" class="marginTop20 form-horizontal blackLabel" enctype="multipart/form-data"> 
+                    <form name="formEdit" method="post" action="performEdit" class="marginTop20 form-horizontal blackLabel"> 
                         <fieldset> 
                             <div class="control-group span12"> 
                                 <label for="name" class="control-label">Nombre</label> 
-                                <div class="controls"><input type="text" name="name" id="name" value="<%= session.getAttribute("prodName") %>" class="input-xlarge required" required="required" />	
+                                <div class="controls"><input type="text" name="name" value="<%= session.getAttribute("prodName")%>" class="input-xlarge required" required="required" />	
                                 </div> 
                             </div>
                             <div class="control-group span12"> 
                                 <label for="description" class="control-label">Descripci&oacute;n</label> 
-                                <div class="controls"><input type="text" name="description" id="description" value="<%= session.getAttribute("prodDesc") %>" class="input-xlarge required" required="required" />	
+                                <div class="controls"><input type="text" name="description" value="<%= session.getAttribute("prodDesc")%>" class="input-xlarge required" required="required" />	
                                 </div> 
                             </div>
                             <div class="control-group span12"> 
                                 <label for="amount" class="control-label">Cantidad</label> 
-                                <div class="controls"><input type="text" name="amount" id="amount" value="<%= session.getAttribute("prodQuant") %>" class="input-xlarge required" required="required" />	
+                                <div class="controls"><input type="text" name="amount" value="<%= session.getAttribute("prodQuant")%>" class="input-xlarge required" required="required" />	
                                 </div> 
                             </div>
-                                
-                                <input type="hidden" name="prodId" value="<%= session.getAttribute("prodId") %>">
 
-                            <div class="form-actions btn-group span7">
-                                <a class="btn btn-danger" href="inventario.jsp"><i class="icon-remove icon-white"></i> Cancelar</a>
-                                <button class="btn btn-primary" type="submit"><i class="icon-ok icon-white"></i> Guardar</button>
-                            </div>
+                            <input type="hidden" name="prodId" value="<%= session.getAttribute("prodId")%>">
+
+                                <div class="form-actions btn-group span7">
+                                    <a class="btn btn-danger" href="inventario.jsp"><i class="icon-remove icon-white"></i> Cancelar</a>
+                                    <!-- <button class="btn btn-primary" type="submit"><i class="icon-ok icon-white"></i> Guardar</button> -->
+                                    <input type="submit" name="submit" value="Guardar">
+                                </div>
 
                         </fieldset>
                     </form>	
