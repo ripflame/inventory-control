@@ -1,0 +1,79 @@
+#rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: auto;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+#rounded-corner thead th.rounded-company
+{
+	background: #b9c9fe url('/images/table-images/left.png') left -1px no-repeat;
+}
+#rounded-corner thead th.rounded-q4
+{
+	background: #b9c9fe url('/images/table-images/right.png') right -1px no-repeat;
+}
+#rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#rounded-corner tfoot td.rounded-foot-left
+{
+	background: #e8edff url('/images/table-images/botleft.png') left bottom no-repeat;
+}
+#rounded-corner tfoot td.rounded-foot-right
+{
+	background: #e8edff url('/images/table-images/botright.png') right bottom no-repeat;
+}
+#rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}
+
+#logout {
+	float: right;
+	display: table;
+	position: relative;
+	top: 30px;
+}
+
+#logout p {
+	color: white;
+	float: left;
+	display: table;
+	margin: 4px 10px 0 0;
+}
+
+.btn_style1 {
+
+	background: #FF4A71;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	border: 1px solid #FA3F52;
+	color: #FFFFFF;
+	float: right;
+	display: table;
+}
+
+.btn_add_element {
+	margin-top: 20px;
+}
+
+.a_color:visited,
+.a_color:hover {
+	color: white;
+}

@@ -1,0 +1,43 @@
+.pink_lion {
+	margin: 0 auto;
+	display: table;
+	padding: 100px 0 0 0;
+	width: 300px;
+}
+
+#form {
+	margin: 50px auto;
+	display: table;
+	background: gray;
+}
+
+#form table {
+	width: 350px;
+	height: 150px;
+}
+
+#form, #form table  {
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 11px 1px #A5A5A5;
+	-webkit-box-shadow: inset 0px 0px 11px 1px #A5A5A5;
+	-moz-box-shadow: inset 0px 0px 11px 1px #A5A5A5;
+	background-image: linear-gradient(bottom, rgb(230,230,230) 11%, rgb(204,204,204) 56%, rgb(186,186,186) 78%);
+background-image: -o-linear-gradient(bottom, rgb(230,230,230) 11%, rgb(204,204,204) 56%, rgb(186,186,186) 78%);
+background-image: -moz-linear-gradient(bottom, rgb(230,230,230) 11%, rgb(204,204,204) 56%, rgb(186,186,186) 78%);
+background-image: -webkit-linear-gradient(bottom, rgb(230,230,230) 11%, rgb(204,204,204) 56%, rgb(186,186,186) 78%);
+background-image: -ms-linear-gradient(bottom, rgb(230,230,230) 11%, rgb(204,204,204) 56%, rgb(186,186,186) 78%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.11, rgb(230,230,230)),
+	color-stop(0.56, rgb(204,204,204)),
+	color-stop(0.78, rgb(186,186,186))
+);	
+}
+
+.td_align {
+	margin: 5px 0 0 70px;
+	display: table;
+}
