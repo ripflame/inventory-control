@@ -16,6 +16,25 @@
         <servlet-name>Logout</servlet-name>
         <url-pattern>/admin/logout</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>addProduct</servlet-name>
+        <servlet-class>servlets.AddProduct</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addProduct</servlet-name>
+        <url-pattern>/admin/addProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>inventario</servlet-name>
+        <servlet-class>servlets.Inventario</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>inventario</servlet-name>
+        <url-pattern>/admin/inventario</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

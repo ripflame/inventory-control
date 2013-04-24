@@ -63,7 +63,7 @@ public class Login extends HttpServlet {
                     if (temporalUser.getName().equals(user) && temporalUser.getPassword().equals(password)) {
                         HttpSession session = request.getSession(true);
                         session.setAttribute("User", temporalUser);
-                        dispatcher = sc.getRequestDispatcher("/admin/inventario.jsp");
+                        dispatcher = sc.getRequestDispatcher("/admin/inventario");
                         dispatcher.forward(request, response);
                     }
                 }
