@@ -12,6 +12,10 @@
         <servlet-name>EditProduct</servlet-name>
         <servlet-class>servlets.EditProduct</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RemoveProduct</servlet-name>
+        <servlet-class>servlets.RemoveProduct</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/admin/login</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>EditProduct</servlet-name>
         <url-pattern>/admin/edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveProduct</servlet-name>
+        <url-pattern>/admin/removeProduct</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
