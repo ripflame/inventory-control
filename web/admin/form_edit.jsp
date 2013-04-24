@@ -66,8 +66,8 @@ Released   : 20132602
 
                                 <div class="form-actions btn-group span7">
                                     <a class="btn btn-danger" href="inventario.jsp"><i class="icon-remove icon-white"></i> Cancelar</a>
-                                    <!-- <button class="btn btn-primary" type="submit"><i class="icon-ok icon-white"></i> Guardar</button> -->
-                                    <input type="submit" name="submit" value="Guardar">
+                                    <button class="btn btn-primary" type="submit"><i class="icon-ok icon-white"></i> Guardar</button>
+                                    <!-- <input type="submit" name="submit" value="Guardar"> -->
                                 </div>
 
                         </fieldset>
