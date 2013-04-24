@@ -4,6 +4,7 @@
  */
 package servlets;
 
+import inventory_management.Product;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -13,6 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import managers.ProductsManager;
 
 /**
  *
@@ -44,8 +46,18 @@ public class AddProduct extends HttpServlet {
             RequestDispatcher dispatcher = sc.getRequestDispatcher("/admin/form_new.jsp");
             dispatcher.include(request, response);
             
-            String button = request.getParameter("");
+            String name = request.getParameter("name");
+            String description = request.getParameter("description");
+            String amount = request.getParameter("amount");
+            String aceptar = request.getParameter("guardar");
             
+            if(name != null && description != null && amount != null && aceptar != null) {
+                ProductsManager prodMan = new ProductsManager();
+                Product product = new Product(name, description, Integer.parseInt(amount));
+                prodMan.addProduct(product);
+                dispatcher = sc.getRequestDispatcher("/admin/inventario");
+                dispatcher.forward(request, response);
+            }
             
         } finally {            
             out.close();

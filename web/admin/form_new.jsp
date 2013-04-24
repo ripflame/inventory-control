@@ -42,7 +42,8 @@ Released   : 20132602
 	<div id="page" class="container">
 		<div id="content">
 			<header>NEW ELEMENT</header>
-			<form id="form" method="post" action="inventario.jsp" class="marginTop20 form-horizontal blackLabel" enctype="multipart/form-data"> 
+                        
+			<form method="post" action="addProduct" class="marginTop20 form-horizontal blackLabel"> 
 			<fieldset> 
 				<div class="control-group span12"> 
 					<label for="name" class="control-label">Nombre</label> 
@@ -61,8 +62,10 @@ Released   : 20132602
 				</div>
 				
 				<div class="form-actions btn-group span7">
-					<a class="btn btn-danger" href="inventario.jsp"><i class="icon-remove icon-white"></i> Cancelar</a>
-					<button class="btn btn-primary" type="submit"><i class="icon-ok icon-white"></i> Guardar</button>
+					<a class="btn btn-danger" href="/inventario"><i class="icon-remove icon-white"></i> Cancelar</a>
+					
+                                        <input type="submit" name="guardar" value="Guardar" class="btn btn-primary">
+                                       <!--<i class="icon-ok icon-white"></i>-->
 				</div>
 												
 			</fieldset>

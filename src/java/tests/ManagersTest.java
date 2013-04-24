@@ -14,14 +14,15 @@ import managers.UserManager;
 public class ManagersTest {
     
     public static void main(String[] args) {
-        printUsers();
-        searchUserById(1);
+//        printUsers();
+//        searchUserById(1);
 //        addUser("Loco", "loco", 1);
 //        deleteUser(); !!Hard-coded
         
-        printProducts();
-        searchProductById(1);
-//        addProduct("Bichos", "Biscozos pero sabrosos", 9001);
+//        printProducts();
+//        searchProductById(1);
+          addProduct("Bichos", "Biscozos pero sabrosos", 9001);
+          printProducts();
 //        deleteProduct(); !!Hard-coded
     }
 
