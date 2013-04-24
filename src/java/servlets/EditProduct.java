@@ -4,21 +4,25 @@
  */
 package servlets;
 
+import inventory_management.Product;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import managers.ProductsManager;
 
 /**
  *
  * @author Gilberto Leon <ripflame@gmail.com>
  */
 public class EditProduct extends HttpServlet {
-    
+
     private ServletContext sc;    // Contexto del servlet
 
     @Override
@@ -42,7 +46,29 @@ public class EditProduct extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             /* TODO output your page here. You may use following sample code. */
-        } finally {            
+            String button = request.getParameter("edit");
+            String editIdString = request.getParameter("productId");
+            int editId = Integer.parseInt(editIdString);
+
+            if (button != null) {
+                ProductsManager pm = new ProductsManager();
+                Product product = pm.getProductWithId(editId);
+
+                if (product != null) {
+                    HttpSession session = request.getSession(false);
+
+                    if (session != null) {
+                        session.setAttribute("prodId", product.getId());
+                        session.setAttribute("prodName", product.getName());
+                        session.setAttribute("prodDesc", product.getDescription());
+                        session.setAttribute("prodQuant", product.getQuantity());
+
+                        RequestDispatcher dispatcher = sc.getRequestDispatcher("/admin/form_edit.jsp");
+                        dispatcher.include(request, response);
+                    }
+                }
+            }
+        } finally {
             out.close();
         }
     }
