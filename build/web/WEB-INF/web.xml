@@ -16,6 +16,10 @@
         <servlet-name>PerformEdit</servlet-name>
         <servlet-class>servlets.PerformEdit</servlet-class>
     </servlet>
+	<servlet>
+		<servlet-name>RemoveProduct</servlet-name>
+        <servlet-class>servlets.RemoveProduct</servlet-class>
+	</servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/admin/login</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>PerformEdit</servlet-name>
         <url-pattern>/admin/performEdit</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>RemoveProduct</servlet-name>
+        <url-pattern>/admin/removeProduct</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

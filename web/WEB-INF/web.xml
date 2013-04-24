@@ -13,8 +13,13 @@
         <servlet-class>servlets.EditProduct</servlet-class>
     </servlet>
     <servlet>
+<<<<<<< HEAD
         <servlet-name>PerformEdit</servlet-name>
         <servlet-class>servlets.PerformEdit</servlet-class>
+=======
+        <servlet-name>RemoveProduct</servlet-name>
+        <servlet-class>servlets.RemoveProduct</servlet-class>
+>>>>>>> sammy
     </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
@@ -45,8 +50,13 @@
         <url-pattern>/admin/edit</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+<<<<<<< HEAD
         <servlet-name>PerformEdit</servlet-name>
         <url-pattern>/admin/performEdit</url-pattern>
+=======
+        <servlet-name>RemoveProduct</servlet-name>
+        <url-pattern>/admin/removeProduct</url-pattern>
+>>>>>>> sammy
     </servlet-mapping>
     <session-config>
         <session-timeout>
