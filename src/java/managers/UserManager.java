@@ -62,6 +62,17 @@ public class UserManager {
         }
     }
     
+    public void updateUser(User user) {
+        try {
+            session.beginTransaction();
+            session.merge(user);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            Logger.getLogger(UserManager.class.getName()).log(Level.INFO,
+                    "Couldn't update user", e);
+        }
+    }
+    
     public void deleteUser(User user) {
         try {
             session.beginTransaction();

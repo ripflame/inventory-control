@@ -9,8 +9,7 @@
     <package name="struts2" extends="struts-default">
         
         <action name="*User" class="actions.UserActions" method="{1}">
-            <result name="editInfo">/struts/editUser.jsp</result> 
-            <result name="new">/struts/newUser.jsp</result>
+            <result name="editUser">/admin/user_edit.jsp</result>
         </action>
         
     </package>
