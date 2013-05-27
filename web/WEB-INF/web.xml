@@ -24,10 +24,17 @@
         <servlet-name>PerformEdit</servlet-name>
         <servlet-class>servlets.PerformEdit</servlet-class>
     </servlet>
-    
     <servlet>
         <servlet-name>RemoveProduct</servlet-name>
         <servlet-class>servlets.RemoveProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addProduct</servlet-name>
+        <servlet-class>servlets.AddProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>inventario</servlet-name>
+        <servlet-class>servlets.Inventario</servlet-class>
     </servlet>
     
     <servlet-mapping>
@@ -38,18 +45,10 @@
         <servlet-name>Logout</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>addProduct</servlet-name>
-        <servlet-class>servlets.AddProduct</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>addProduct</servlet-name>
         <url-pattern>/admin/addProduct</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>inventario</servlet-name>
-        <servlet-class>servlets.Inventario</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>inventario</servlet-name>
         <url-pattern>/admin/inventario</url-pattern>
@@ -62,7 +61,6 @@
         <servlet-name>PerformEdit</servlet-name>
         <url-pattern>/admin/performEdit</url-pattern>
     </servlet-mapping>
-    
     <servlet-mapping>
         <servlet-name>RemoveProduct</servlet-name>
         <url-pattern>/admin/removeProduct</url-pattern>
@@ -73,6 +71,17 @@
             30
         </session-timeout>
     </session-config>
+    
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/struts/*</url-pattern>
+    </filter-mapping>
+    
     <welcome-file-list>
         <welcome-file>/index.jsp</welcome-file>
     </welcome-file-list>
