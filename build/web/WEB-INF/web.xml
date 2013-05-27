@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-    <filter>
-        <filter-name>LoginFilter</filter-name>
-        <filter-class>servlets.LoginFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>LoginFilter</filter-name>
-        <url-pattern>/admin/*</url-pattern>
-    </filter-mapping>
+    
     <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>servlets.Login</servlet-class>
@@ -73,13 +66,29 @@
     </session-config>
     
     <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>servlets.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/admin/form_edit.jsp</url-pattern>
+        <url-pattern>/admin/form_new.jsp</url-pattern>
+        <url-pattern>/admin/intentario.jsp</url-pattern>
+        <url-pattern>/admin/removeProduct</url-pattern>
+        <url-pattern>/admin/performEdit</url-pattern>
+        <url-pattern>/admin/edit</url-pattern>
+        <url-pattern>/admin/inventario</url-pattern>
+        <url-pattern>/admin/addProduct</url-pattern>
+    </filter-mapping>
+    
+    <filter>
         <filter-name>struts2</filter-name>
         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
     </filter>
-
     <filter-mapping>
         <filter-name>struts2</filter-name>
-        <url-pattern>/struts/*</url-pattern>
+        <url-pattern>/admin/createUser</url-pattern>
+        <url-pattern>/admin/updateNewUser</url-pattern>
     </filter-mapping>
     
     <welcome-file-list>

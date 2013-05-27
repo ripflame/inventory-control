@@ -10,7 +10,8 @@
         
         <action name="*User" class="actions.UserActions" method="{1}">
             <result name="editInfo">/struts/editUser.jsp</result> 
-            <result name="new">/struts/newUser.jsp</result>
+            <result name="createNewUser">/admin/user_new.jsp</result>
+            <result name="successNewUser">/admin/inventario</result>
         </action>
         
     </package>

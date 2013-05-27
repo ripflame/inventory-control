@@ -29,6 +29,7 @@
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td><input type="submit" name="Submit" value="Login"></td>
+                                            <td><a class="btn btn-danger" href="admin/createUser"><i class="icon-remove icon-white"></i>Registrarse</a></td>
                                             <td>&nbsp;</td>
                                         </tr>
                                     </table>

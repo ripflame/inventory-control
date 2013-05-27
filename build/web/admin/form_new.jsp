@@ -64,7 +64,7 @@ Released   : 20132602
                             </div>
 
                             <div class="form-actions btn-group span7">
-                                <a class="btn btn-danger" href="/inventario"><i class="icon-remove icon-white"></i> Cancelar</a>
+                                <a class="btn btn-danger" href="inventario"><i class="icon-remove icon-white"></i> Cancelar</a>
 
                                 <input type="submit" name="guardar" value="Guardar" class="btn btn-primary">
                                     <!--<i class="icon-ok icon-white"></i>-->
