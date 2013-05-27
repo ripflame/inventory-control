@@ -34,7 +34,7 @@ Released   : 20132602
                     <h1><img src="images/pink_lion.png" alt="pink_lion" width="200" height="90"><a href=".">Hakuna Matata</a></h1>
                 </div>
                 <div id="logout">
-                    <form name="logoutForm" method="post" action="/inventario/admin/logout">
+                    <form name="logoutForm" method="post" action="/inventario/logout">
                         <input class="btn_style1" type="submit" name="logout" value="Log Out"></input>
                     </form>
                 </div>

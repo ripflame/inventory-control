@@ -47,7 +47,7 @@ public class Login extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            RequestDispatcher dispatcher = sc.getRequestDispatcher("/admin/index.jsp");
+            RequestDispatcher dispatcher = sc.getRequestDispatcher("/index.jsp");
             dispatcher.include(request, response);
 
             String button = request.getParameter("Submit");
