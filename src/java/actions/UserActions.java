@@ -11,7 +11,7 @@ import org.apache.struts2.interceptor.SessionAware;
  * @author Gilberto Leon <ripflame@gmail.com>
  */
 public class UserActions extends ActionSupport implements SessionAware {
-    
+
     private Map<String, Object> mapSession;
     UserManager userManager = new UserManager();
     User user;
@@ -22,20 +22,20 @@ public class UserActions extends ActionSupport implements SessionAware {
         userManager.updateUser(user);
         return "editUser";
     }
-    
+
     public String create() throws Exception {
-        
+
         return "createNewUser";
     }
-    
+
     public String updateNew() throws Exception {
         UserManager man = new UserManager();
         User newUser = new User(this.getUserName(), this.getUserPassword(), 0);
-        
+
         man.addUser(newUser);
-        
+
         mapSession.put("User", newUser);
-        
+
         return "successNewUser";
     }
 
@@ -58,7 +58,7 @@ public class UserActions extends ActionSupport implements SessionAware {
 
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
-        }
+    }
 
     /**
      * @return the user
