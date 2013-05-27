@@ -89,6 +89,8 @@
         <filter-name>struts2</filter-name>
         <url-pattern>/admin/createUser</url-pattern>
         <url-pattern>/admin/updateNewUser</url-pattern>
+        <url-pattern>/admin/editUser</url-pattern>
+        <url-pattern>/admin/performEditUser</url-pattern>
     </filter-mapping>
     
     <welcome-file-list>

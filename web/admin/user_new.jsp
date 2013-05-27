@@ -32,8 +32,8 @@
 
                     <s:form action="/admin/updateNewUser" cssClass="marginTop20, form-horizontal, blackLabel">
                         <fieldset>
-                                <s:textfield name="userName" label="Nombre de usuario" cssClass="control-label"/>
-                                <s:textfield name="userPassword" label="Contraseña" cssClass="control-label"/>
+                                <s:textfield name="userName" label="Nombre de usuario" cssClass="control-label" requiredLabel="required"/>
+                                <s:textfield name="userPassword" label="Contraseña" cssClass="control-label" requiredLabel="required"/>
                                 
                                 <s:submit value="Guardar" cssClass="btn, btn-primary"/>
                         </fieldset>

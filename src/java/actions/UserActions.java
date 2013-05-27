@@ -19,10 +19,20 @@ public class UserActions extends ActionSupport implements SessionAware {
     private String userPassword;
 
     public String edit() throws Exception {
-        userManager.updateUser(user);
         return "editUser";
     }
 
+    public String performEdit() throws Exception {
+        UserManager man = new UserManager();
+        User editUser = (User) mapSession.get("User");
+        
+        editUser.setName(user.getName());
+        editUser.setPassword(user.getPassword());
+        
+        man.updateUser(editUser);
+        return "successEditUser";
+    }
+    
     public String create() throws Exception {
 
         return "createNewUser";

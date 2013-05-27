@@ -12,6 +12,7 @@
             <result name="createNewUser">/admin/user_new.jsp</result>
             <result name="successNewUser">/admin/inventario</result>
             <result name="editUser">/admin/user_edit.jsp</result>
+            <result name="successEditUser">/admin/inventario</result>
         </action>
         
     </package>

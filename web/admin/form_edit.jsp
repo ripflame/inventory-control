@@ -1,19 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-
-Name       : Workspace 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20132602
-
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Editar producto</title>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
@@ -52,7 +41,7 @@ Released   : 20132602
                                 </div> 
                             </div>
                             <div class="control-group span12"> 
-                                <label for="description" class="control-label">Descripci&oacute;n</label> 
+                                <label for="description" class="control-label">Descripción</label> 
                                 <div class="controls"><input type="text" name="description" value="<%= session.getAttribute("prodDesc")%>" class="input-xlarge required" required="required" />	
                                 </div> 
                             </div>
@@ -67,7 +56,6 @@ Released   : 20132602
                                 <div class="form-actions btn-group span7">
                                     <a class="btn btn-danger" href="inventario.jsp"><i class="icon-remove icon-white"></i> Cancelar</a>
                                     <button class="btn btn-primary" type="submit"><i class="icon-ok icon-white"></i> Guardar</button>
-                                    <!-- <input type="submit" name="submit" value="Guardar"> -->
                                 </div>
 
                         </fieldset>
@@ -77,7 +65,7 @@ Released   : 20132602
         </div>
         <div id="footer-wrapper" class="form_footer">
             <div id="copyright" class="container">
-                <p>Copyright (c) 2013. <font color="lightgray">Roberto, el leÃ³n rosado.</font> All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+                <p>Copyright (c) 2013. <font color="lightgray">Roberto, el león rosado.</font> All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
             </div>
         </div>
     </body>
