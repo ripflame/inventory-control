@@ -13,8 +13,15 @@ import org.apache.struts2.interceptor.SessionAware;
 public class UserActions extends ActionSupport implements SessionAware {
     
     private Map<String, Object> mapSession;
+    UserManager userManager = new UserManager();
+    User user;
     private String userName;
     private String userPassword;
+
+    public String edit() throws Exception {
+        userManager.updateUser(user);
+        return "editUser";
+    }
     
     public String create() throws Exception {
         
@@ -51,6 +58,19 @@ public class UserActions extends ActionSupport implements SessionAware {
 
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
+        }
+
+    /**
+     * @return the user
+     */
+    public User getUser() {
+        return user;
     }
 
+    /**
+     * @param user the user to set
+     */
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
