@@ -1,0 +1,18 @@
+Modified files:
+  webxml:
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/struts/*</url-pattern>
+    </filter-mapping>
+    
+  struts.xml:
+    <action name="*User" class="fmat.diplo.struts2.actions.UserAction" method="{1}">
+            <result name="editInfo">/struts/editUser.jsp</result> 
+            <result name="new">/struts/newUser.jsp</result>
+    </action>
+
+  Added Struts library:
